@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffec40</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffec40</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="titleColor">#000000</color>
+    <color name="black">#FF000000</color>
+    <color name="background_material_light">#fafafa</color>
+    <color name="primary_material_dark">#ffec40</color>
+    <color name="primary_dark_material_dark">#000000</color>
+    <color name="accent_material_light">#ffec40</color>
+    <color name="primary_text_default_material_dark">#000000</color>
+    <color name="accent_material_dark">#ffec40</color>
+    <color name="primary_text_default_material_dark_hahaha">#000000</color>
+    <color name="primary_material_light">#ffec40</color>
+    <color name="primary_dark_material_light">#000000</color>
+</resources>

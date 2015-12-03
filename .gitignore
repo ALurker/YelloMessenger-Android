@@ -1,0 +1,12 @@
+*.swp
+.DS_Store
+ProjectCode/.gradle
+ProjectCode/local.properties
+ProjectCode/.idea/workspace.xml
+ProjectCode/.idea/libraries
+.DS_Store
+ProjectCode/build
+ProjectCode/captures
+*.apk
+ProjectCode/.idea/gradle.xml
+ProjectCode/.idea/misc.xml

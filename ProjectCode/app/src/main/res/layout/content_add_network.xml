@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_network"
+    tools:context="yello.yellomessenger.AddNetwork"
+    android:id="@+id/addNetworkLayout" >
+
+    <TextView
+        android:id="@+id/net_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/network_name_label_text"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/add_text_size"
+        android:layout_alignBottom="@+id/network_name"
+        android:layout_alignTop="@+id/network_name"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/network_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/default_net_name"
+        android:layout_toEndOf="@id/net_name_label"
+        android:inputType="text|textNoSuggestions"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/forward_ip_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forward_ip_label"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/add_text_size"
+        android:layout_alignBottom="@+id/forward_ip"
+        android:layout_alignTop="@+id/forward_ip"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/forward_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/default_forward_ip"
+        android:layout_below="@id/network_name"
+        android:layout_toEndOf="@id/forward_ip_label"
+        android:inputType="number"
+        android:digits=".1234567890"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/forward_port_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forward_port_label"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/add_text_size"
+        android:layout_alignBottom="@+id/forward_port"
+        android:layout_alignTop="@+id/forward_port"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/forward_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/default_forward_port"
+        android:layout_below="@id/forward_ip"
+        android:layout_toEndOf="@id/forward_port_label"
+        android:inputType="number"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/add_network_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_button"
+        android:layout_below="@id/forward_port"
+        android:layout_alignEnd="@id/forward_port"
+        android:onClick="saveNetwork"/>
+</RelativeLayout>

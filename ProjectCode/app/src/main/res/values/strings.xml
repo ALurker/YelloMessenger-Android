@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">YelloMessenger</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">My Message</string>
+
+    <!--Strings for the AddNetwork Activity-->
+    <string name="title_activity_add_network">Add A Network</string>
+    <string name="network_name_label_text">Name: </string>
+    <string name="default_net_name">Home Network</string>
+    <string name="forward_ip_label">IP Address: </string>
+    <string name="default_forward_ip">192.168.0.1</string>
+    <string name="forward_port_label">Port: </string>
+    <string name="default_forward_port">1337</string>
+    <string name="add_button">Add</string>
+    <string name="modify_add_button">Save</string>
+    <string name="del_button">Delete</string>
+    <string name="back_serv_str">Background Service</string>
+    <string name="cur_net">Current Network: </string>
+</resources>
